@@ -1,0 +1,16 @@
+.icon_tool {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon_tool {
+    color: var(--third-color);
+}
+
+.icon_tool :nth-child(2) {
+    color: var(--second-color);
+    font-size: 25px;
+}

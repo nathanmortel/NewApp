@@ -1,0 +1,68 @@
+@font-face {
+    font-family: "text_typo";
+    src: url(./assets/typographie/f1_typo/Formula1_Display-Regular.ttf);
+}
+
+@font-face {
+    font-family: "title_typo";
+    src: url(./assets/typographie/f1_typo/Formula1_Display-Bold.ttf);
+}
+
+
+/*********** Root CSS **************/
+
+:root {
+    /* COLORS */
+    --main-color: white;
+    --second-color: black;
+    --third-color: #c0c0c0;
+    --complementary-color: #d50000;
+    /* TYPOGRAPHIES */
+    --title_typo: "title_typo";
+    --text_typo: "text_typo";
+    /* BORDERS-RADIUS */
+    --radius: 10px;
+}
+
+
+/*********** CSS GLOBAL ************/
+
+.sr-only {
+    display: none !important;
+}
+
+body {
+    background-color: var(--main-color);
+}
+
+main {
+    padding-bottom: 6rem;
+}
+
+h2 {
+    font-family: var(--title_typo);
+    color: var(--second-color);
+    font-size: 20px;
+}
+
+h3 {
+    font-family: var(--title_typo);
+    font-size: 16px;
+}
+
+p {
+    font-family: var(--text_typo);
+    font-size: 14px;
+    color: var(--third-color);
+}
+
+footer {
+    width: 100%;
+    height: 4rem;
+    background-color: var(--main-color);
+    border-top: 1px solid var(--third-color);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+}

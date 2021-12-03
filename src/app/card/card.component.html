@@ -1,0 +1,16 @@
+<h2>Les nouveautés</h2>
+<section class="section_card">
+    <section class="section_card_scroll">
+        <div class="card" *ngFor="let product of bikeList">
+            <div class="size_image">
+                <img src={{product.img}} class="card-img-top" alt="...">
+            </div>
+
+            <div class="card-body">
+                <h3 class="card-title">{{product.title}}</h3>
+                <p class="card-text">{{product.description}}</p>
+                <a routerLink="/single/{{product.id}}">Découvrir</a>
+            </div>
+        </div>
+    </section>
+</section>
